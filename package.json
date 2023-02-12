@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "js-share": "^2.3.2",
+    "print-js": "^1.6.0"
+  }
+}

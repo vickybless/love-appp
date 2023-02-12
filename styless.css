@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("images/love15.jpg");
+  background-repeat: repeat;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto 0;
+  display: table;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+.heading {
+  font-family: cursive;
+  font-size: 3rem;
+  color: #d30d1d;
+}
+.heading:hover {
+  color: #c95252;
+}
+.span-btn {
+  background-color: #c95252;
+  padding: 4px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+.span-btn:hover {
+  background-color: #d30d1d;
+}
+.row {
+  margin: 20px 0;
+  transition: 2s;
+  border-radius: 12px;
+
+  /* border-left: 10px solid #fff; */
+}
+.column {
+  background: rgba(15, 11, 11, 0.8);
+  display: table-cell;
+  padding: 10px;
+  width: 33.33333%;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  /* border-style: groove; */
+  transition: 2s;
+  border-radius: 12px;
+  /* box-shadow: 10px 10px 5px lightblue; */
+  /* box-shadow: 10px 10px 3px red; */
+}
+
+/* //this if for chnaged individual box colours */
+.row:nth-child(1) .column:nth-child(1) {
+  background: #d30d1d;
+}
+.row:nth-child(1) .column:nth-child(1):hover {
+  background: #c95252;
+}
+.row:nth-child(1) .column:nth-child(1) {
+  background: #d30d1d;
+}
+.row:nth-child(1) .column:nth-child(2) {
+  background: #c95252;
+}
+.row:nth-child(1) .column:nth-child(3) {
+  background: #d30d1d;
+}
+.row:nth-child(2) .column:nth-child(1) {
+  background: #d30d1d;
+}
+.row:nth-child(2) .column:nth-child(2) {
+  background: #c95252;
+}
+.row:nth-child(2) .column:nth-child(3) {
+  background: #d30d1d;
+}
+@media (max-width: 900px) {
+  .container {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    border: none;
+    box-sizing: border-box;
+  }
+  .row {
+    margin: 0;
+  }
+}
+
+/* /////add note section */
+/* .add-note {
+  height: 100%;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 120px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background 0.2;
+}
+
+.add-note:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+////end add note section */
+
+/* //Add single note */
+
+/* End Add single note */

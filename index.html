@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Have fun with love</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FOnt awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- For socials -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-plain.css" />
+
+  </head>
+    <div class="container" id="content">
+      <div class="header">
+          
+        <h2>HAVE FUN WITH LOVE</h2>
+        <!-- ///Button to second page -->
+   
+        <span class="span-lovenotes" style="float: right;"><a href="lovenotes.html"><button class="span-btn">Click to see love notes</button></a>
+        </span>
+        <!-- images again -->
+        <!-- <img src="images/love1.jpg" alt="" /> -->
+      </div>
+      <div class="main-body">
+        <div class="input">
+          <input
+            class="input"
+            type="text"
+            id="firstname"
+            autocomplete="off"
+            placeholder="Enter your name....."
+          />
+          <span id="span1"  class = "input-heart"><i class="fas fa-heart fa-3x "></i>        
+          </span>
+          <input
+          class="input"
+            type="text"
+            id="lastname"
+            autocomplete="off"
+            placeholder="Enter your Partner's name....."
+          />
+        </div>
+
+        <!----Calculate---->
+        <div class="calculate">
+          <small id="error" > error message</small>
+          <div class="calculate-button">
+            <!-- onClick event function -->
+            <h4 class="button" onclick="lovecal()">Calculate Love(%)</h4>
+            <!-- End onClick event function -->
+
+            <!-- Added images -->
+            <!-- <img src="images/love2.jpg" id="image1" alt="" /> -->
+            <!-- <img src="images/love2.jgp" id="image2" alt="" /> -->
+          </div>
+          <div class="answer">
+            <!-- <img src="images/love2.jpg" alt="" /> -->
+            <!-- <div class = "input-heart"><i class="fas fa-heart fa-4x "></i></div> -->
+
+            <h2 class="heading">45</h2>
+          </div>
+          <div class="message">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- //Print Button -->
+
+      <!-- <button type="button" onClick="printForm()">Print Form</button> -->
+      <section id="share-buttons" class="container" style="margin-top: 20px; align-items:inherit; left: 0; box-shadow: none; background-color: #a81314 ">
+        
+        <!-- AddToAny  Social share BEGINs -->
+        <span style="float: left; text-align: left; padding:5px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">Spread the fun</span>
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="icon-bar" style="float: left; margin-right: 0;">
+    
+    <a class="a2a_button_whatsapp"></a>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_email"></a> 
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    </div>
+</section>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    
+      </div>
+
+      <section>
+        <div class="footer">
+            <p class="footer-items">© 2023. victoriachiamaka08@gmail.com</p>
+          </div>      </section>
+
+
+    <!-- Second JS -->
+    <script src=app.js ></script>
+  </body>
+</html>

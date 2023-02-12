@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styless.css" />
+
+    <title>love notes</title>
+  </head>
+  <body>
+    <!-- //headeinng -->
+    <div class="container" style="margin-top: 50px ;">
+      <h3 class="heading">Spy on some love notes</h3>
+      <span class="span-lovenotes" style="float: right;"><a href="index.html"><button class="span-btn">GO BACK</button></a>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <p>
+          Our score is perfect little wonder our love is perfect, you give me peace unending, I want to be by your side always, I love you baby boo.
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            Smile baby, laugh baby, dance for me baby, my source of happiness and joy, this app couldn't say otherwise about our love. You are my joy giver, I love you boo.
+          </p>
+        </div>
+        <div class="column">
+          <p>
+           My everyday val, this love calculator has also proven me right, the thought of you always brightend my day, I want to be with you forever my baby boo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second row -->
+      <div class="row">
+        <div class="column">
+          <p>
+            You remember those love fairey tales we used to watch as kids, our love will be sweeter than them, please be my val everyday. I love you from the most sincere place of my heart, My baby.
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            This app states we are a 20 but my love for you is 100, it's gonna boast it to an 80 which is a perfect match, I love you darling.
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            “Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me alive.“ <br>
+           <i><b> - Inconnu</b></i>
+          </p>
+        </div>
+        <!-- Third row -->
+        <div class="row">
+            <div class="column">
+              <p>
+                 
+
+There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love. <br>1 John 4: 18
+
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                Do everything in Love!  <br> Corinthians 16: 14
+
+              </p>
+            </div>
+            <div class="column" id="note-box" >
+                <!-- id="note-box"  -->
+
+              <!-- <p>
+                6. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi, et ullam aut tempore alias ea reiciendis nisi maxime
+                aspernatur? Ad sapiente provident odio vel iusto dignissimos nemo
+                cupiditate deleniti quis?
+              </p> -->
+              <!-- <button class = "add-note" type="button">+</button> -->
+              <textarea placeholder="Take your love note here...." cols="10" rows="8"  style="width: 100%; height: 100%; border: none; outline: none; padding: 8px ; "></textarea>
+
+              
+            </div>
+      </div>
+      <!-- Third row -->
+    </div>
+    <!-- <script>
+        const notesContainer = document.getElementById("app");
+        const addNoteButton = notesContainer.querySelector(".add-note")
+
+        getNotes().forEach(note=>{
+            const noteElement = createNoteElement(note.id, note.content);
+            notesContainer.insertBefore(noteElement, addNoteButton)
+        })
+
+        addNoteButton.addEventListener("click", () => addNote()); 
+
+        function getNotes(){
+            return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]")
+        }
+        function saveNotes(notes){
+            localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
+
+        }
+        function createNoteElement(id, content){
+            const element = document.createElement("textarea");
+
+            // element.classList.add("note");
+            // element.value = content;
+            // element.placeholder = 'Empty Sticky Note';
+
+
+            element.addEventListener("change", ()=> {
+                updateNote(id, element.value);
+            })
+            element.addEventListener("dblclick", ()=>{
+                const doDelete = confirm("Are you sure you want to delete note?")
+
+                if (doDelete){
+                    deleteNote(id,element)
+                }
+            })
+
+            return element;
+
+        }
+        function addNote(){
+            const existingNotes = getNotes(); 
+            const noteObject ={
+                id: Math.floor(Math.random()*100000), content: ""
+            }
+
+            const noteElement= createNoteElement(noteObject.id, noteObject.content)
+            notesContainer.insertBefore(noteElement, addNoteButton)
+
+            notes.push(noteObject);
+            saveNotes(existingNotes);
+
+        }
+        function updateNote(id, newContent){
+            const notes = getNotes();
+            const targetNote = notes.filter(note => note.id == id)[0];
+
+            targetNote.content = newContent; 
+            saveNotes(notes);
+
+        }
+        function updateNote(id, element){
+            console.log("Deleting Note.... ")
+            console.log(id, newContent)
+
+        }
+    </script> -->
+  </body>
+</html>
